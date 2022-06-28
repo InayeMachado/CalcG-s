@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html>
+ 
+<!--parte "visual"-->
+<head>
+  <style type="text/css">
+    body {
+      margin: 30px;
+    }
+  </style>
+</head>
+  
+<!--informar valores"-->
+<body>
+  <form>
+    Informe o valor total: <input type="text" 
+    id="valorTotal" /><br>
+    Informe a quantidade de pessoas: <input type="text" 
+    id="quantPessoas" /><br>
+    <input type="button" onClick="divideBy()" 
+    Value="Calcule" /><br>
+  </form>
+  
+  <!--exibe resultado"-->
+  <p>Resultado: <br>
+   <span id = "result"></span>
+  </p>
+   
+  <!--calculo da divisão"-->
+  <script>
+    function divideBy()
+    {
+       valorTotal = document.getElementById(
+        "valorTotal").value;
+       quantPessoas = document.getElementById(
+        "quantPessoas").value;
+      document.getElementById(
+        "result").innerHTML = valorTotal / quantPessoas;
+    }
+  </script>
+</body>
+</html>
