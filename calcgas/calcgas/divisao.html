@@ -1,7 +1,7 @@
- <!DOCTYPE html>
+ <!-- <!DOCTYPE html>
 <html>
  
-<!--parte "visual"-->
+<!--parte "visual"
 <head>
   <style type="text/css">
     body {
@@ -10,7 +10,7 @@
   </style>
 </head>
   
-<!--informar valores"-->
+<!--informar valores"
 <body>
   <form>
     Informe o valor total: <input type="text" 
@@ -21,12 +21,12 @@
     Value="Calcule" /><br>
   </form>
   
-  <!--exibe resultado"-->
+  <!--exibe resultado"
   <p>Resultado: <br>
    <span id = "result"></span>
   </p>
    
-  <!--calculo da divisão"-->
+  <!--calculo da divisão"
   <script>
     function divideBy()
     {
@@ -39,4 +39,82 @@
     }
   </script>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+ 
+  <!--parte "visual"-->
+  <head>
+    <meta charset="UTF-8">
+  </head>
+
+  <style>
+    button{
+    width:200px;
+    height: 40px;
+    background-color:#000;
+    border-radius: 20px;
+    color: #fff;
+  }
+
+  input{
+    width:200px;
+    height: 40px;
+    background-color:#000;
+    border-radius: 20px;
+    color: #fff;
+  }
+
+    body{
+      text-align: center;
+  }
+
+    a{
+      color:white;
+  }
+    section{
+      margin-top: 50px;
+    }
+    h1{
+      margin-top: 30px;
+      font-size: 42px;
+      font-weight: 200;
+    }
+
+    p{
+      color: #515c52;
+    }
+
+  </style>
+    
+  <!--informar valores"-->
+  <body>
+    <h1>Divisão</h1>
+    <form>
+      <p>Informe o valor total:</p>
+        <input type="text" id="valorTotal"/><br><br>
+      <p>Informe a quantidade de pessoas:</p>
+        <input type="text" id="quantPessoas"/><br><br>
+        <input type="button" onClick="divideBy()" value="Calcule"/>
+    </form><br>
+    
+    <!--exibe resultado"-->
+    <p>Resultado:</p>
+      <span id = "result"></span>
+    
+    <!--calculo da divisão"-->
+    <script>
+      function divideBy()
+      {
+        valorTotal = document.getElementById(
+          "valorTotal").value;
+        quantPessoas = document.getElementById(
+          "quantPessoas").value;
+        document.getElementById(
+          "result").innerHTML = valorTotal / quantPessoas;
+      }
+    </script><br>
+
+    <a href="first.html"><button>Voltar</button></a>
+  </body>
 </html>
