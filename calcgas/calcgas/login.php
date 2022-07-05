@@ -1,3 +1,4 @@
+<!-- FEITO POR EDUARDA E ANA LUISA -->
 <?php
 $login = $_POST['login'];
 $entrar = $_POST['entrar'];
